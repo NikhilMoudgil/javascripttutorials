@@ -1,0 +1,16 @@
+/*const myObj= {
+    Game1:'NFS',
+    Game2:'PUBG',
+    Game3:'FF',
+    Game4:'BGMI'
+}
+for (const key in myObj) {
+ console.log(`${key} Shortcut is for${myObj[key]}` );
+}*/
+// key is for key and myObj[key] if for value
+// ForIn array  for array 
+const prg= ["Js","Ruby","Java","CPP"]
+for (const key in prg) {
+    console.log(prg[key]);    
+}
+// here keys gives the values of array
