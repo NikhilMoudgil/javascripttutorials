@@ -1,3 +1,9 @@
+// type , timestamp , defaultPrevented , target  , toElement ,srsElement ,
+    // - currentTarget , Position related-> clientX,clientY 
+    // altKey,ctrlKey ,shiftKey ,KeyCode
+    
+
+    // approach 4 - attachEvent - this was  older on internet explorer
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,4 +24,44 @@
         </ul>
    </div>
 </body>
+<script>
+   /* // document.getElementById('owl').onclick = function(){
+      //  alert("owl Clicked")
+     //}
+    //best approach by 2023
+    /*document.getElementById('owl').addEventListener('click',function(e){
+       console.log(e);
+       
+    },false)
+    // here e is an event object
+    //there is a  third arguement named default called false
+    //->false -> event bubbling , true -> eventcapturing
+    // Example for eventcapturing
+     document.getElementById('images').addEventListener('click',function(e){
+       console.log("Clicked on image inside the ul");
+    },false)
+    
+    document.getElementById('owl').addEventListener('click',function(e){
+       console.log(" Owl CLicked");
+       e.stopPropagation()// it helps such that owl event do not bubble up to upper event
+    },false)
+    // since here there are two events and with false at default at last 
+    // so when we clicked on both with false it execute without order and with true --
+    // it follows event capturing and run in a ordered manner 
+
+document.getElementById('google').addEventListener('click',function(e){
+     e.preventDefault();
+     e.stopPropagation();
+    console.log("Google Clicked");
+},false)*/
+document.querySelector('#images').addEventListener('click',function(e){
+   console.log(e.target.tagName);
+   if(e.target.tagName=== 'IMG'){
+    let removeIt = e.target.parentNode
+      removeIt.remove() //-> it is a method to remove parent/ element
+   }
+ // removeIt.parentNode.removeChild(removeIt)// it is due to syntax of removeChild
+   
+},false)
+</script>
 </html>
