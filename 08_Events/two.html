@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nikhil.builds</h1>
+    <button id='stop'>STOP</button>
+<script>
+    const sayName=function(){
+        console.log("NIKHIL MOUDGIL"); 
+    }
+    const changeTxt= function(){
+    document.querySelector('h1').innerHTML
+    ="MucsleMatrixTurbo"
+}
+     const changeMe=   setTimeout(changeTxt ,5000)// it will execute a method after some time
+    
+     document.querySelector('#stop').
+    addEventListener('click',function(){
+        clearTimeout(changeMe);// it will be used to stop execution of setTimeout
+        console.log("Change Name Stopped");
+    })
+</script>
+</body>
+
+</html>
