@@ -7,7 +7,7 @@ ops and its resulting value
 . fulfilled-> ops completed succesfully 
 .rejected -> ops failed 
 
-
+*/
 const promiseOne = new Promise(function (resolve, reject) {
     // Do an ASYNC task
     //DB calls , cryptography, network
@@ -92,7 +92,7 @@ async function consumePromiseFive() {
     }
 }
 consumePromiseFive()
-*/
+
 // promiseSix
 async function getAllUsers() {
     try {
@@ -117,3 +117,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
     
 })
 .catch((error)=> console.log(error))
+
+// fetch- > it starts the process of fetching a resource from the network,
+//returning a promise which is fulfilled  once the response is available
