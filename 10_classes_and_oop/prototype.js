@@ -5,9 +5,6 @@ console.log(`Length including Spaces${myName.length}`);
 console.log(`Length excluding Spaces${myName.trueLength()}`);
 // we need to create a method 
 
-
-
-
 let myIdles = ["Gandhi","Bose"];
 
 let idlePwr={

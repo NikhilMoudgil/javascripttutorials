@@ -15,7 +15,7 @@ To solve speghati programming and other object related problems
 # parts of OOP
 Object Literals->
 -Constructor function
--Prototypes
+-Prototypes 
 -Classes
 -Instances(new,this)
 
@@ -27,3 +27,12 @@ Object Literals->
 
 # JavaScript Has A prototypal Behaviour 
 we get this , new ,classes , protypal Inheritance from Prototype
+
+ **Array ---> object---> null 
+ Function in above there is inheritance
+
+ # this referance
+ When in global execution context there is window object access and 
+ this reffer to window object as->
+ Window ={this= window}
+ node={};
